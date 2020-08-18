@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Crypto6300</string>
+    <string name="incorrect_login_message">Incorrect username or password.</string>
+    <string name="name">Name</string>
+    <string name="create_cryptogram">Create Cryptogram</string>
+    <string name="solution">Solution</string>
+    <string name="save">Save</string>
+    <string name="enter_crypt_name">Enter name</string>
+    <string name="enter_solution">Enter solution</string>
+    <string name="enter_number">Enter number</string>
+    <string name="easy_attempts">Easy Attempts</string>
+    <string name="hard_attempts">Hard Attempts</string>
+    <string name="normal_attempts">Normal Attempts</string>
+
+</resources>

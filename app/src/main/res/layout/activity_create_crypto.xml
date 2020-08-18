@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/createCryptogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/create_cryptogram"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/crypto_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/normal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/enter_crypt_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/crypto_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/crypto_name"
+        tools:targetApi="o" />
+
+
+    <TextView
+        android:id="@+id/crypto_solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/solution"
+        app:layout_constraintEnd_toEndOf="@+id/crypto_name"
+        app:layout_constraintTop_toBottomOf="@+id/crypto_name" />
+
+    <EditText
+        android:id="@+id/solution_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/enter_solution"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/crypto_solution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/name_text"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/easy_attempts"
+        app:layout_constraintEnd_toEndOf="@+id/crypto_solution"
+        app:layout_constraintTop_toBottomOf="@+id/crypto_solution" />
+
+    <EditText
+        android:id="@+id/easy_int"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/enter_number"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        app:layout_constraintBaseline_toBaselineOf="@+id/easy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/solution_text"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/normal_attempts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easy" />
+
+    <EditText
+        android:id="@+id/normal_int"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/enter_number"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        app:layout_constraintBaseline_toBaselineOf="@+id/normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/solution_text"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/hard_attempts"
+        app:layout_constraintEnd_toEndOf="@+id/crypto_solution"
+        app:layout_constraintTop_toBottomOf="@+id/normal" />
+
+    <EditText
+        android:id="@+id/hard_int"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/enter_number"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/solution_text"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/save"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hard_int" />
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/adminplayerlist_lost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="Lost"
+        android:textAlignment="viewEnd"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lost_text"
+        app:layout_constraintStart_toEndOf="@+id/lost_text" />
+
+    <TextView
+        android:id="@+id/adminplayerlist_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="Level"
+        android:textAlignment="viewEnd"
+        app:layout_constraintBaseline_toBaselineOf="@+id/level_text"
+        app:layout_constraintStart_toEndOf="@+id/level_text" />
+
+
+
+    <TextView
+        android:id="@+id/won_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Won Times:"
+        app:layout_constraintStart_toStartOf="@+id/adminplayerlist_firstname"
+        app:layout_constraintTop_toBottomOf="@+id/adminplayerlist_firstname" />
+
+    <TextView
+        android:id="@+id/lost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lost Times:"
+        app:layout_constraintStart_toStartOf="@+id/adminplayerlist_firstname"
+        app:layout_constraintTop_toBottomOf="@+id/won_text" />
+
+    <TextView
+        android:id="@+id/level_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Level:"
+        app:layout_constraintStart_toStartOf="@+id/adminplayerlist_firstname"
+        app:layout_constraintTop_toBottomOf="@+id/lost_text" />
+
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Username:"
+        app:layout_constraintStart_toStartOf="@+id/adminplayerlist_firstname"
+        app:layout_constraintTop_toBottomOf="@+id/level_text" />
+
+    <TextView
+        android:id="@+id/adminplayerlist_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:text="First Name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adminplayerlist_won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Won"
+        app:layout_constraintBaseline_toBaselineOf="@+id/won_text"
+        app:layout_constraintStart_toEndOf="@+id/won_text" />
+
+    <TextView
+        android:id="@+id/adminplayerlist_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Username"
+        app:layout_constraintBaseline_toBaselineOf="@+id/username_text"
+        app:layout_constraintStart_toEndOf="@+id/username_text" />
+
+</android.support.constraint.ConstraintLayout>
